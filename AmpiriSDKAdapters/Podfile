@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+workspace 'AmpiriSDKAdapters'
+target 'AmpiriSDKAdapters' do
+    pod 'ampiri-ios-sdk/Core'
+    pod 'mopub-ios-sdk', '~> 4.4'
+    pod 'SDWebImage'
+end

@@ -1,0 +1,6 @@
+xcuserdata
+*.xccheckout
+.DS_Store
+.idea
+test_output
+Pods

@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BD893BFD83CD8BE04B96F7C /* Pods_AmpiriSDKAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7140A4308180A6AE3485BA7D /* Pods_AmpiriSDKAdapters.framework */; };
+		BF057D2D1E701CDA00BBB49A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */; };
+		BF057D2F1E701CDA00BBB49A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D2E1E701CDA00BBB49A /* ViewController.swift */; };
+		BF057D321E701CDA00BBB49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF057D301E701CDA00BBB49A /* Main.storyboard */; };
+		BF057D341E701CDA00BBB49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF057D331E701CDA00BBB49A /* Assets.xcassets */; };
+		BF057D371E701CDA00BBB49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF057D351E701CDA00BBB49A /* LaunchScreen.storyboard */; };
+		BF057D441E70349200BBB49A /* AdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D3F1E70349200BBB49A /* AdTableCell.swift */; };
+		BF057D451E70349200BBB49A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D401E70349200BBB49A /* TableViewController.swift */; };
+		BF057D461E70349200BBB49A /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D411E70349200BBB49A /* SampleModel.swift */; };
+		BF057D471E70349200BBB49A /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D421E70349200BBB49A /* NativeAdCell.swift */; };
+		BF057D481E70349200BBB49A /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF057D431E70349200BBB49A /* NativeAdCell.xib */; };
+		BF057D4B1E7034A800BBB49A /* AmpiriCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D491E7034A800BBB49A /* AmpiriCustomAdapter.swift */; };
+		BF057D4C1E7034A800BBB49A /* AmpiriNativeCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D4A1E7034A800BBB49A /* AmpiriNativeCustomEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7140A4308180A6AE3485BA7D /* Pods_AmpiriSDKAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmpiriSDKAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C7CD694CD6C68AE7D6D690 /* Pods-AmpiriSDKAdapters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmpiriSDKAdapters.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmpiriSDKAdapters/Pods-AmpiriSDKAdapters.release.xcconfig"; sourceTree = "<group>"; };
+		BF057D291E701CDA00BBB49A /* AmpiriSDKAdapters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmpiriSDKAdapters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF057D2E1E701CDA00BBB49A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF057D311E701CDA00BBB49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF057D331E701CDA00BBB49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF057D361E701CDA00BBB49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF057D381E701CDA00BBB49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF057D3F1E70349200BBB49A /* AdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdTableCell.swift; sourceTree = "<group>"; };
+		BF057D401E70349200BBB49A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BF057D411E70349200BBB49A /* SampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		BF057D421E70349200BBB49A /* NativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
+		BF057D431E70349200BBB49A /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
+		BF057D491E7034A800BBB49A /* AmpiriCustomAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmpiriCustomAdapter.swift; sourceTree = "<group>"; };
+		BF057D4A1E7034A800BBB49A /* AmpiriNativeCustomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmpiriNativeCustomEvent.swift; sourceTree = "<group>"; };
+		FCE372ED42B06BE083611026 /* Pods-AmpiriSDKAdapters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmpiriSDKAdapters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmpiriSDKAdapters/Pods-AmpiriSDKAdapters.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF057D261E701CDA00BBB49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD893BFD83CD8BE04B96F7C /* Pods_AmpiriSDKAdapters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF057D201E701CDA00BBB49A = {
+			isa = PBXGroup;
+			children = (
+				BF057D3E1E70341900BBB49A /* MoPubAdapter */,
+				BF057D2B1E701CDA00BBB49A /* AmpiriSDKAdapters */,
+				BF057D2A1E701CDA00BBB49A /* Products */,
+				C7CEF211954ADA220673158B /* Pods */,
+				F4804C65611193944CE05E2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF057D2A1E701CDA00BBB49A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF057D291E701CDA00BBB49A /* AmpiriSDKAdapters.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF057D2B1E701CDA00BBB49A /* AmpiriSDKAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				BF057D3F1E70349200BBB49A /* AdTableCell.swift */,
+				BF057D401E70349200BBB49A /* TableViewController.swift */,
+				BF057D411E70349200BBB49A /* SampleModel.swift */,
+				BF057D421E70349200BBB49A /* NativeAdCell.swift */,
+				BF057D431E70349200BBB49A /* NativeAdCell.xib */,
+				BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */,
+				BF057D2E1E701CDA00BBB49A /* ViewController.swift */,
+				BF057D301E701CDA00BBB49A /* Main.storyboard */,
+				BF057D331E701CDA00BBB49A /* Assets.xcassets */,
+				BF057D351E701CDA00BBB49A /* LaunchScreen.storyboard */,
+				BF057D381E701CDA00BBB49A /* Info.plist */,
+			);
+			path = AmpiriSDKAdapters;
+			sourceTree = "<group>";
+		};
+		BF057D3E1E70341900BBB49A /* MoPubAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				BF057D491E7034A800BBB49A /* AmpiriCustomAdapter.swift */,
+				BF057D4A1E7034A800BBB49A /* AmpiriNativeCustomEvent.swift */,
+			);
+			name = MoPubAdapter;
+			sourceTree = "<group>";
+		};
+		C7CEF211954ADA220673158B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCE372ED42B06BE083611026 /* Pods-AmpiriSDKAdapters.debug.xcconfig */,
+				72C7CD694CD6C68AE7D6D690 /* Pods-AmpiriSDKAdapters.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4804C65611193944CE05E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7140A4308180A6AE3485BA7D /* Pods_AmpiriSDKAdapters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF057D281E701CDA00BBB49A /* AmpiriSDKAdapters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF057D3B1E701CDA00BBB49A /* Build configuration list for PBXNativeTarget "AmpiriSDKAdapters" */;
+			buildPhases = (
+				36CB8319E8CF045C6A347649 /* [CP] Check Pods Manifest.lock */,
+				BF057D251E701CDA00BBB49A /* Sources */,
+				BF057D261E701CDA00BBB49A /* Frameworks */,
+				BF057D271E701CDA00BBB49A /* Resources */,
+				E6FE2CEE58C5FC07AB214870 /* [CP] Embed Pods Frameworks */,
+				952A859CDF146EE073205E48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmpiriSDKAdapters;
+			productName = AmpiriSDKAdapters;
+			productReference = BF057D291E701CDA00BBB49A /* AmpiriSDKAdapters.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF057D211E701CDA00BBB49A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Ivan;
+				TargetAttributes = {
+					BF057D281E701CDA00BBB49A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF057D241E701CDA00BBB49A /* Build configuration list for PBXProject "AmpiriSDKAdapters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF057D201E701CDA00BBB49A;
+			productRefGroup = BF057D2A1E701CDA00BBB49A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF057D281E701CDA00BBB49A /* AmpiriSDKAdapters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF057D271E701CDA00BBB49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF057D371E701CDA00BBB49A /* LaunchScreen.storyboard in Resources */,
+				BF057D481E70349200BBB49A /* NativeAdCell.xib in Resources */,
+				BF057D341E701CDA00BBB49A /* Assets.xcassets in Resources */,
+				BF057D321E701CDA00BBB49A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36CB8319E8CF045C6A347649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		952A859CDF146EE073205E48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmpiriSDKAdapters/Pods-AmpiriSDKAdapters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FE2CEE58C5FC07AB214870 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmpiriSDKAdapters/Pods-AmpiriSDKAdapters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF057D251E701CDA00BBB49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF057D2F1E701CDA00BBB49A /* ViewController.swift in Sources */,
+				BF057D4B1E7034A800BBB49A /* AmpiriCustomAdapter.swift in Sources */,
+				BF057D471E70349200BBB49A /* NativeAdCell.swift in Sources */,
+				BF057D461E70349200BBB49A /* SampleModel.swift in Sources */,
+				BF057D2D1E701CDA00BBB49A /* AppDelegate.swift in Sources */,
+				BF057D441E70349200BBB49A /* AdTableCell.swift in Sources */,
+				BF057D451E70349200BBB49A /* TableViewController.swift in Sources */,
+				BF057D4C1E7034A800BBB49A /* AmpiriNativeCustomEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF057D301E701CDA00BBB49A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF057D311E701CDA00BBB49A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF057D351E701CDA00BBB49A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF057D361E701CDA00BBB49A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF057D391E701CDA00BBB49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF057D3A1E701CDA00BBB49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF057D3C1E701CDA00BBB49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE372ED42B06BE083611026 /* Pods-AmpiriSDKAdapters.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ampiri-ios-dev",
+				);
+				INFOPLIST_FILE = AmpiriSDKAdapters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glispa.AmpiriSDKAdapters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		BF057D3D1E701CDA00BBB49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C7CD694CD6C68AE7D6D690 /* Pods-AmpiriSDKAdapters.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ampiri-ios-dev",
+				);
+				INFOPLIST_FILE = AmpiriSDKAdapters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glispa.AmpiriSDKAdapters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF057D241E701CDA00BBB49A /* Build configuration list for PBXProject "AmpiriSDKAdapters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF057D391E701CDA00BBB49A /* Debug */,
+				BF057D3A1E701CDA00BBB49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF057D3B1E701CDA00BBB49A /* Build configuration list for PBXNativeTarget "AmpiriSDKAdapters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF057D3C1E701CDA00BBB49A /* Debug */,
+				BF057D3D1E701CDA00BBB49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF057D211E701CDA00BBB49A /* Project object */;
+}

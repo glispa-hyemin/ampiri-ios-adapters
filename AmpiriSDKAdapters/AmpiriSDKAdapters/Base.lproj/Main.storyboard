@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hob-MU-fEI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QBi-CT-z1a">
+            <objects>
+                <viewController id="hob-MU-fEI" customClass="ViewController" customModule="AmpiriSDKAdapters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QqL-lT-ntC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cuh-UC-GKW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1T3-8U-aPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-va-oNq">
+                                <rect key="frame" x="59" y="303" width="256" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EVw-Y9-Hta"/>
+                                    <constraint firstAttribute="width" constant="256" id="smw-hc-6yD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MoPub Adapter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jNe-hT-XWo" kind="show" id="9Jj-mk-raZ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ampiri_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-QV-L2j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Nf-va-oNq" firstAttribute="centerX" secondItem="1T3-8U-aPA" secondAttribute="centerX" id="0dG-rz-HfT"/>
+                            <constraint firstItem="6Nf-va-oNq" firstAttribute="centerY" secondItem="1T3-8U-aPA" secondAttribute="centerY" id="1kg-cj-b41"/>
+                            <constraint firstItem="mJd-QV-L2j" firstAttribute="top" secondItem="1T3-8U-aPA" secondAttribute="top" id="FGS-WZ-B7C"/>
+                            <constraint firstItem="mJd-QV-L2j" firstAttribute="centerX" secondItem="1T3-8U-aPA" secondAttribute="centerX" id="cev-dN-NIY"/>
+                            <constraint firstAttribute="trailing" secondItem="mJd-QV-L2j" secondAttribute="trailing" id="jAe-4b-utQ"/>
+                            <constraint firstItem="mJd-QV-L2j" firstAttribute="leading" secondItem="1T3-8U-aPA" secondAttribute="leading" id="kKs-Iq-NkG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74K-wT-1tf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="336.88155922038982"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TNK-dk-xeT">
+            <objects>
+                <tableViewController id="jNe-hT-XWo" customClass="TableViewController" customModule="AmpiriSDKAdapters" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" id="zeD-ny-8k5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleTableCell" rowHeight="87" id="12Y-r0-Mit" customClass="SampleTableCell" customModule="AmpiriSDKAdapters" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12Y-r0-Mit" id="n2K-XV-Jss">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-if-l24">
+                                            <rect key="frame" x="99" y="3" width="268" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="IV5-uH-sBQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKK-01-csd">
+                                            <rect key="frame" x="8" y="3" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="Nf8-ae-pRG"/>
+                                                <constraint firstAttribute="width" constant="80" id="XFY-on-f7a"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-ye-5GH">
+                                            <rect key="frame" x="99" y="37" width="268" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="fDV-s7-IVZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HNK-if-l24" firstAttribute="top" secondItem="n2K-XV-Jss" secondAttribute="top" constant="3" id="AWg-Fq-nfo"/>
+                                        <constraint firstItem="HNK-if-l24" firstAttribute="leading" secondItem="mKK-01-csd" secondAttribute="trailing" constant="11" id="F4H-rj-nRy"/>
+                                        <constraint firstItem="bUc-ye-5GH" firstAttribute="bottom" secondItem="n2K-XV-Jss" secondAttribute="bottomMargin" id="N4q-rg-sJ7"/>
+                                        <constraint firstItem="mKK-01-csd" firstAttribute="centerY" secondItem="n2K-XV-Jss" secondAttribute="centerY" id="dq2-QX-Ueq"/>
+                                        <constraint firstItem="bUc-ye-5GH" firstAttribute="trailing" secondItem="n2K-XV-Jss" secondAttribute="trailingMargin" id="n6y-CD-uS9"/>
+                                        <constraint firstAttribute="trailing" secondItem="HNK-if-l24" secondAttribute="trailing" constant="8" id="o9O-sV-uto"/>
+                                        <constraint firstItem="mKK-01-csd" firstAttribute="leading" secondItem="n2K-XV-Jss" secondAttribute="leading" constant="8" id="wCG-0W-TiD"/>
+                                        <constraint firstItem="bUc-ye-5GH" firstAttribute="leading" secondItem="mKK-01-csd" secondAttribute="trailing" constant="11" id="zCf-XH-VZQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="adImage" destination="mKK-01-csd" id="7GZ-6H-nzQ"/>
+                                    <outlet property="adText" destination="bUc-ye-5GH" id="Oj0-L6-l35"/>
+                                    <outlet property="adTitle" destination="HNK-if-l24" id="yVh-nB-7Jd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jNe-hT-XWo" id="Nyk-sH-6j5"/>
+                            <outlet property="delegate" destination="jNe-hT-XWo" id="Y87-aE-jCq"/>
+                        </connections>
+                    </tableView>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ec-A4-iiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114.4000000000001" y="341.37931034482762"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ampiri_Logo" width="616" height="169"/>
+    </resources>
+</document>
