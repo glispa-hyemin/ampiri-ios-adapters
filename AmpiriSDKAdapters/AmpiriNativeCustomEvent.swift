@@ -27,14 +27,14 @@ open class AmpiriNativeCustomEvent: MPNativeCustomEvent {
 		guard let adUnit = (info["adUnit" as NSObject] as? String) else { reportError("No AdUnit!"); return }
 
         AmpiriSDK.logEnabled = true
-        AmpiriSDK.shared().loadNativeAd(withAdUnitId: adUnit, success: { (nativeAd:AMPNativeAd) -> UIView? in
-            nativeAd.setTrackImpression({
+        AmpiriSDK.shared.loadNativeAd(withAdUnitId: adUnit, success: { (nativeAd:AMPNativeAssets) -> UIView? in
+            nativeAd.onImpression({
                 self.ampiriCustomAdapter?.registerImpressionToMopub()
             })
-            .setTrackClick({
+            .onClick({
                 self.ampiriCustomAdapter?.registerClickToMopub()
             })
-            .setTrackLeftApplication({
+            .onLeftApplication({
                 self.ampiriCustomAdapter?.registerFinishHandlingClickToMopub()
             })
 
@@ -42,7 +42,7 @@ open class AmpiriNativeCustomEvent: MPNativeCustomEvent {
 
             let mopubAd = MPNativeAd(adAdapter: self.ampiriCustomAdapter)
 
-            let images = self.getImageUrls(urlStrings: [nativeAd.iconURL, nativeAd.imageURL])
+            let images = self.getImageUrls(urlStrings: [nativeAd.iconURL!, nativeAd.imageURL!])
 
 
             super.precacheImages(withURLs: images, completionBlock: { [unowned self] (error: [Any]?) in

@@ -14,9 +14,9 @@ open class AmpiriCustomAdapter: NSObject, MPNativeAdAdapter {
 	weak open var delegate: MPNativeAdAdapterDelegate!
 	open var properties = [AnyHashable: Any]()
 
-	fileprivate let ad: AMPNativeAd
+	fileprivate let ad: AMPNativeAssets
     
-	public init(ad: AMPNativeAd) {
+	public init(ad: AMPNativeAssets) {
 
 		self.ad = ad
 
