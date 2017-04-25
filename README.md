@@ -72,7 +72,7 @@ Congratulations! You have now successfully integrated **Ampiri** ad network and 
 
 - Please have in mind, that any time you make a change to the MoPub dashboard, try to fetch an ad a couple of times and then wait a few minutes for MoPub's cache to clear.
 - You can also try cloning the example project below to make sure everything is running fine.
-- If at any point you need any technical help, please get in touch with [Ampiri Support](https://ampiri.zendesk.com/hc/en-us)
+- If at any point you need any technical help, please get in touch with [Ampiri Support](https://docs.ampiri.com)
 
 ## Clone the Example Project
 * `git clone https://github.com/ampiri/ampiri-ios-adapters.git`
